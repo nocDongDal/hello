@@ -6,4 +6,10 @@ import {Component} from '@angular/core';
   styleUrls: ['./hello.component.scss']
 })
 
-export class HelloComponent{}
+export class HelloComponent{
+  name: string;
+
+  setName(name: string) {
+    this.name = name;
+  }
+}
